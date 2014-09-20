@@ -3,7 +3,7 @@ package task4;
 public class Kueche implements Cloneable {
 
 	@Override
-	protected Kueche clone() {
+	public Kueche clone() {
 		Kueche k = null;
 		
 		try {

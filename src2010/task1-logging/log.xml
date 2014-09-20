@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2014-09-20T14:57:14</date>
+  <millis>1411217834901</millis>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>logging.Launcher</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Programm gestartet</message>
+</record>
+<record>
+  <date>2014-09-20T14:57:14</date>
+  <millis>1411217834988</millis>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>logging.Calculator</class>
+  <method>divide</method>
+  <thread>1</thread>
+  <message>Teilen durch null</message>
+</record>
+<record>
+  <date>2014-09-20T14:57:14</date>
+  <millis>1411217834990</millis>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>logging.Launcher</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Programm finish</message>
+</record>
+</log>

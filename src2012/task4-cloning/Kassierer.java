@@ -7,7 +7,7 @@ public class Kassierer extends Rolle implements Cloneable {
 	}	
 	
 	@Override
-	protected Kassierer clone() {
+	public Kassierer clone() {
 		Kassierer k = null;
 		
 		k = (Kassierer) super.clone();

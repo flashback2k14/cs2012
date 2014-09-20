@@ -13,7 +13,7 @@ public class Bar implements Cloneable {
 	}
 	
 	@Override
-	protected Bar clone() {
+	public Bar clone() {
 		Bar b = null;
 		
 		try {

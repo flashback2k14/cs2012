@@ -13,7 +13,7 @@ public class Rolle implements Cloneable {
 	}
 	
 	@Override
-	protected Rolle clone() {
+	public Rolle clone() {
 		Rolle r = null;
 		
 		try {

@@ -3,7 +3,7 @@ package task4;
 public class Raum implements Cloneable {
 
 	@Override
-	protected Raum clone() {
+	public Raum clone() {
 		Raum r = null;
 		
 		try {

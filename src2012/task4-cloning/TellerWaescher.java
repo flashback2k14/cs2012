@@ -7,7 +7,7 @@ public class TellerWaescher extends Rolle implements Cloneable {
 	}	
 	
 	@Override
-	protected TellerWaescher clone() {
+	public TellerWaescher clone() {
 		TellerWaescher tw = null;
 		
 		tw = (TellerWaescher) super.clone();

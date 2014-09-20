@@ -21,7 +21,7 @@ public class Mensa implements Cloneable {
 	}
 	
 	@Override
-	protected Mensa clone() {
+	public Mensa clone() {
 		Mensa m = null;
 		
 		try {

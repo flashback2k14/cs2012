@@ -7,7 +7,7 @@ public class Koch extends Rolle implements Cloneable {
 	}	
 	
 	@Override
-	protected Koch clone() {
+	public Koch clone() {
 		Koch k = null;
 		
 		k = (Koch) super.clone();

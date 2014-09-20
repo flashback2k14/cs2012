@@ -1,4 +1,33 @@
+﻿/*-------------------------------------------------------------------------------------
+Frage 1:
+Was versteht man unter einem relationalen DBMS?
+- DBMS = Datenbankmanagementsystem
+- Gesamtheit aller Programme zur Erzeugung, Verwaltung und Manipulation einer Datenbank
+- RDBMS = welches intern gemäß dem relationalen Modell organisiert ist
+
+Frage 2:
+Was unterscheidet eine Tabelle von einer Relation?
+- Relation: 
+-- benannte Menge von n-Tupeln
+-- n-Tupel: Anordnung von n atomaren, nicht weiter zerlegbaren Attributen
+- Tabelle:
+-- Unterschied: ein Tupel darf mehrfach auftreten
+-- Mathematisch keine Menge
+
+Frage 3: 
+Was versteht man unter einem NULL-Value?
+- ein unbekannter fehlender Wert
+- zeigt an, dass etwas anders als die anderen Werte ist
+
+Frage 4:
+Darf das Anlegen eines Index auf die DB zugreifende Anwendungsprogramme beeinträchtigen?
+- 
+
+----------------------------------------------------------------------------------------*/
+
+
 -- Tabellen löschen
+SET foreign_key_checks = 0;
 DROP TABLE IF EXISTS Objekte;
 DROP TABLE IF EXISTS Mehrfachsterne;
 DROP TABLE IF EXISTS Pulsare;
@@ -6,6 +35,7 @@ DROP TABLE IF EXISTS Nebel;
 DROP TABLE IF EXISTS Teleskop;
 DROP TABLE IF EXISTS Beobachter;
 DROP TABLE IF EXISTS Beobachtung;
+SET foreign_key_checks = 1;
 
 -- Aufgabe 7a)
 CREATE TABLE Objekte(
@@ -166,9 +196,9 @@ FROM
 	JOIN Beobachter AS br 
 	JOIN Teleskop AS t
 ON 
-	bg.ID=o.ID AND 
-	bg.BID=br.BID AND 
-	bg.TID=t.TID;
+	bg.ID = o.ID AND 
+	bg.BID = br.BID AND 
+	bg.TID = t.TID;
 
 -- Aufgabe 7d)
 SELECT 

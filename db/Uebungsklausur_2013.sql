@@ -21,7 +21,7 @@ Was versteht man unter einem NULL-Value?
 
 Frage 4:
 Darf das Anlegen eines Index auf die DB zugreifende Anwendungsprogramme beeinträchtigen?
-- 
+- darf es nicht, dient jediglich zur Performanz der DB (intern)
 
 ----------------------------------------------------------------------------------------*/
 
